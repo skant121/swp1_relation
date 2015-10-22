@@ -1,0 +1,8 @@
+<h1>수정하기</h1>
+<p>edit post <%=@comments.id%></p>
+<form action="/comment_update">
+    <input type="hidden" name="id" value="<%=@comments.id%>">
+    
+    <textarea name="comment"><%=@comments.msg%></textarea> <br> <br>
+    <input type="submit"> 
+</form>

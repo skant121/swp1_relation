@@ -1,0 +1,7 @@
+<h1>수정하기</h1>
+<p>edit post <%=@blogs.id%></p>
+<form action="/update">
+    <input type="hidden" name="id" value="<%=@blogs.id%>">
+    <textarea name="blog"><%=@blogs.content%></textarea> <br> <br>
+    <input type="submit"> 
+</form>
